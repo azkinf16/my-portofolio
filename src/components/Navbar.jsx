@@ -4,8 +4,8 @@ function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="flex items-center justify-between absolute pt-10 px-20 z-10 w-full">
-          <h1 className="text-2xl text-sky-200 tracking-[5px] hover:tracking-[6px] duration-300">
+        <div className="flex items-center justify-between absolute pt-10 px-40 z-10 w-full">
+          <h1 className="text-2xl text-sky-200 cursor-default tracking-[5px] hover:tracking-[6px] duration-300">
             <span className="font-black">Azki</span>Fajri
           </h1>
           <div className="flex justify-end w-full ml-12">
