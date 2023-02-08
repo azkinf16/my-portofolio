@@ -5,7 +5,7 @@
   background-size: cover;
   width: 350px;
   height: 350px;
-  animation: profile_animate 8s ease-in-out infinite 1s;
+  animation: profile_animate 8s ease-in-out infinite;
 }
 
 @keyframes profile_animate {
