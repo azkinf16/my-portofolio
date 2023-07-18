@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "TerbangIn.",
+    "image": "images/img1-1.jpg",
+    "image2": "images/img2-4.png",
+    "desc": "It is a task for the Final Project to create a Platform with the 'E-Ticket Flight' theme. This platform is a place to buy and book flight tickets online.",
+    "created": "January 2023",
+    "repo": "https://github.com/BinarFEBE6/front-end",
+    "demo": "https://e-terbangin.vercel.app"
+  },
+  {
+    "id": 2,
+    "title": "Movie.sz",
+    "image": "images/img1-2.jpg",
+    "image2": "images/img2-3.png",
+    "desc": "Platform which contains the display along with its routing from a Film website using open source API, namely TMDB API",
+    "created": "November 2022",
+    "repo": "https://github.com/azkinf16/moviesz",
+    "demo": "https://moviesz.netlify.app"
+  },
+  {
+    "id": 3,
+    "title": "Meals",
+    "image": "images/img1-3.jpg",
+    "image2": "images/img2-5.png",
+    "desc": "Platform which contains the display of Food information along with how to cook it using an open source API, namely themealdb",
+    "created": "November 2022",
+    "repo": "https://github.com/azkinf16/meals-react",
+    "demo": "https://meals-react.vercel.app"
+  },
+  {
+    "id": 4,
+    "title": "Simple Todolist",
+    "image": "images/img1-5.jpg",
+    "image2": "images/img2-2.png",
+    "desc": "A simple TodoList application with data connected using json-server",
+    "created": "September 2022",
+    "repo": "https://github.com/azkinf16/todo-list-chap4",
+    "demo": null
+  },
+  {
+    "id": 5,
+    "title": "IOS Calculator",
+    "image": "images/img1-4.jpg",
+    "image2": "images/img2-1.png",
+    "desc": "A simple Calculator application with IOS design",
+    "created": "August 2022",
+    "repo": "https://github.com/azkinf16/calc-react",
+    "demo": "https://calciosreact.netlify.app"
+  }
+]
