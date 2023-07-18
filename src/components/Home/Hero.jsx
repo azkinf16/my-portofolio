@@ -4,7 +4,6 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 import { BsFacebook, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
-import { IoHandRight } from "react-icons/io5";
 
 import Modal from "../Modal";
 import "./hero.css";
@@ -115,10 +114,10 @@ export default function Hero() {
           <div className="mt-12 flex md:justify-start justify-center">
             <button
               onClick={() => setShowModal(true)}
-              className="bg-gradient-to-b from-[#1b1b31] to-[#22222d] text-white py-3 px-4 rounded-xl group hover:scale-110 duration-300 flex items-center font-bold"
+              className="group bg-gradient-to-b from-[#1b1b31] to-[#22222d] text-white py-3 px-4 rounded-xl group hover:scale-110 duration-300 flex items-center font-bold"
             >
               Say Hello{" "}
-              <IoHandRight className="ml-2 group-hover:rotate-45 group-hover:text-sky-300 duration-300" />
+              <span className="ml-2 group-hover:animate-wave">👋</span>
             </button>
           </div>
           <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
