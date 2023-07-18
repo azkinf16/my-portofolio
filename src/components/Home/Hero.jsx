@@ -114,10 +114,10 @@ export default function Hero() {
           <div className="mt-12 flex md:justify-start justify-center">
             <button
               onClick={() => setShowModal(true)}
-              className="group bg-gradient-to-b from-[#1b1b31] to-[#22222d] text-white py-3 px-4 rounded-xl group hover:scale-110 duration-300 flex items-center font-bold"
+              className="bg-gradient-to-b from-[#1b1b31] to-[#22222d] text-white py-3 px-4 rounded-xl group hover:scale-110 duration-300 flex items-center font-bold"
             >
               Say Hello{" "}
-              <span className="ml-2 group-hover:animate-wave">👋</span>
+              <span className="ml-2 animate-wave">👋</span>
             </button>
           </div>
           <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
