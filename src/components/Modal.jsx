@@ -47,7 +47,7 @@ export default function Modal({ isVisible, onClose, children }) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="mx-4 md:mx-0 fixed inset-0 bg-black bg-opacity-25
-      backdrop-blur-sm flex justify-center items-center"
+      backdrop-blur-sm flex justify-center items-center z-10"
           id="wrapper"
           onClick={handleClose}
         >
