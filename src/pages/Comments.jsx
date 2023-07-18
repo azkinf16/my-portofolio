@@ -10,6 +10,7 @@ import { HiArrowLongLeft } from "react-icons/hi2";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 import { MdEmail } from "react-icons/md";
+import { useEffect } from "react";
 
 function Comments() {
   const [userName, setUserName] = useState("");
@@ -19,6 +20,10 @@ function Comments() {
   const navigate = useNavigate();
 
   const form = useRef();
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -79,7 +84,7 @@ function Comments() {
           Back
         </button>
       </div>
-      <div className="massage_contact mx-12 md:mx-0 md:mt-0 mt-10">
+      <div className="mx-12 md:mx-0 md:mt-0 mt-10">
         <h2 className="text-white/40 text-center md:text-2xl text-xl font-thin">
           Get in touch
         </h2>
