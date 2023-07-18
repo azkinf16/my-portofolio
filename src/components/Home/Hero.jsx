@@ -17,7 +17,6 @@ export default function Hero() {
 
   const form = useRef();
 
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -124,19 +123,17 @@ export default function Hero() {
           </div>
           <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
             <div className="md:m-5">
-              <h2 className="text-white/40 text-xl font-thin">
-                Get in touch
-              </h2>
+              <h2 className="text-white/40 text-xl font-thin">Get in touch</h2>
               <h1 className="text-white text-md font-extrabold mt-2">
                 Write any message for me 😊
               </h1>
               <form
                 ref={form}
                 onSubmit={sendEmail}
-                className="flex flex-col gap-6 mt-6 w-full"
+                className="flex flex-col gap-6 mt-6"
               >
                 <input
-                  className="p-2 rounded-lg border border-gray-700 bg-[#171723] text-white placeholder:text-white/20 placeholder:text-xs"
+                  className="md:w-[300px] w-[250px] p-2 rounded-lg border border-gray-700 bg-[#171723] text-white placeholder:text-white/20 text-sm placeholder:text-xs"
                   type="text"
                   name="user_name"
                   id="user_name"
@@ -146,7 +143,7 @@ export default function Hero() {
                   placeholder=" Input your name"
                 />
                 <input
-                  className="p-2 rounded-lg border border-gray-700 bg-[#171723] text-white placeholder:text-white/20 placeholder:text-xs"
+                  className="md:w-[300px] w-[250px] p-2 rounded-lg border border-gray-700 bg-[#171723] text-white placeholder:text-white/20 text-sm placeholder:text-xs"
                   type="email"
                   name="user_email"
                   id="user_email"
@@ -156,7 +153,7 @@ export default function Hero() {
                   placeholder=" Input your email"
                 />
                 <textarea
-                  className="p-2 rounded-lg border border-gray-700 bg-[#171723] text-white placeholder:text-white/20 placeholder:text-xs"
+                  className="md:w-[300px] w-[250px] p-2 rounded-lg border border-gray-700 bg-[#171723] text-white placeholder:text-white/20 text-sm placeholder:text-xs"
                   name="message"
                   id="message"
                   cols="30"
@@ -167,7 +164,7 @@ export default function Hero() {
                 ></textarea>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-b from-[#171723] to-[#0d0d1d] py-2 px-3 font-bold rounded-lg hover:scale-90 duration-300 text-white"
+                  className="md:w-[300px] w-[250px] bg-gradient-to-b from-[#171723] to-[#0d0d1d] py-2 px-3 font-bold rounded-lg hover:scale-90 duration-300 text-white"
                 >
                   Send
                 </button>
