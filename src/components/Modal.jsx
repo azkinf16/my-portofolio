@@ -56,7 +56,7 @@ export default function Modal({ isVisible, onClose, children }) {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="bg-gradient-to-b from-[#161626] to-[#191921] rounded-lg flex p-5"
+            className="w-max bg-gradient-to-b from-[#161626] to-[#191921] rounded-lg flex p-5"
           >
             {children}
             <CloseOutlined
