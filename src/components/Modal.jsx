@@ -56,11 +56,11 @@ export default function Modal({ isVisible, onClose, children }) {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="w-max bg-gradient-to-b from-[#161626] to-[#191921] rounded-lg flex p-5"
+            className="bg-gradient-to-b from-[#161626] to-[#191921] rounded-lg flex p-5"
           >
             {children}
             <CloseOutlined
-              className="text-gray-400 text-sm ml-5"
+              className="text-gray-400 text-sm ml-5 h-max"
               onClick={() => onClose()}
             />
           </motion.div>
