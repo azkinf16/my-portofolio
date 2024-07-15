@@ -5,7 +5,7 @@ import { IoLocationSharp, IoSchoolSharp } from "react-icons/io5";
 export default function About() {
   return (
     <div id="about">
-      <div className="md:py-28 pt-48 md:px-40">
+      <div className="md:py-24 md:px-40">
         <div className="mb-14">
           <h6 className="text-white/50 text-center font-thin text-xs">
             My Introduction
