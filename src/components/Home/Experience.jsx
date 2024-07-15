@@ -26,16 +26,16 @@ export default function Experience() {
               <div className="absolute md:h-[450px] h-[400px] md:w-[350px] w-[280px] bg-gradient-to-b from-[#121221] via-[#22222e] to-[#1e1e28] pt-6 px-7 rounded-xl">
                 <div className="grid grid-cols-1 place-items-center md:mt-16 mt-10">
                   <FcIdea className="text-[160px] md:text-[180px]" />
-                  <h1 className="text-white font-bold text-3xl mt-10">
-                    Learning
+                  <h1 className="text-white font-bold text-2xl mt-10">
+                    Work & Learning
                   </h1>
                 </div>
               </div>
               <div className="md:h-[450px] h-[400px] md:w-[350px] w-[280px] bg-gradient-to-b from-[#121221] via-[#22222e] to-[#1e1e28] pt-6 px-7 rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden]">
                 <div className="mb-10 flex items-center justify-center">
                   <HiLightBulb className="text-gray-400 mr-3 text-[20px] md:text-[32px]" />
-                  <h2 className="text-white font-normal md:text-lg text-xs">
-                    Learning Experiences
+                  <h2 className="text-white font-normal md:text-sm text-xs">
+                    Work & Learning Experiences
                   </h2>
                 </div>
                 <Timeline
@@ -44,10 +44,31 @@ export default function Experience() {
                     {
                       color: "gray",
                       children: (
+                        <div className="ml-3">
+                          <h2 className="text-white font-semibold md:text-sm text-[10px]">
+                            Kampus Merdeka - Magang Bersertifikat
+                          </h2>
+                          <p className="text-white/50 md:text-xs text-[10px] mt-2 mb-2">
+                          at MKnows Consulting - Front End Web Developer
+                          </p>
+                          <div className="flex items-center">
+                            <BsCalendarCheckFill
+                              size={18}
+                              className="text-gray-200/80 mr-2"
+                            />
+                            <p className="text-gray-200/80 md:text-xs text-[8px] font-semibold">
+                              August - December 2023
+                            </p>
+                          </div>
+                        </div>
+                      ),
+                    },
+                    {
+                      color: "gray",
+                      children: (
                         <div className="ml-3 md:mb-2">
                           <h2 className="text-white font-semibold md:text-sm text-[10px]">
-                            Kampus Merdeka - Magang Studi Independen
-                            Bersertifikat
+                            Kampus Merdeka - Studi Independen Bersertifikat
                           </h2>
                           <p className="text-white/50 md:text-xs text-[10px] mt-2 mb-2">
                             at Binar Academy - Front End JavaScript
@@ -81,30 +102,6 @@ export default function Experience() {
                             />
                             <p className="text-gray-200/80 md:text-xs text-[10px] font-semibold">
                               July - August 2021
-                            </p>
-                          </div>
-                        </div>
-                      ),
-                    },
-                    {
-                      color: "gray",
-                      children: (
-                        <div className="ml-3">
-                          <h2 className="text-white font-semibold md:text-xs text-[7px]">
-                            Competition “Mile Zero Project Competition : Driving
-                            Economic Innovation and Sustainabilitiy in
-                            Challenging Times With Al”
-                          </h2>
-                          <p className="text-white/50 md:text-xs text-[10px] mt-2 mb-2">
-                            Competition Participant
-                          </p>
-                          <div className="flex items-center">
-                            <BsCalendarCheckFill
-                              size={18}
-                              className="text-gray-200/80 mr-2"
-                            />
-                            <p className="text-gray-200/80 md:text-xs text-[8px] font-semibold">
-                              December 2020 - January 2021
                             </p>
                           </div>
                         </div>
