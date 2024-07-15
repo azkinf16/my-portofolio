@@ -56,7 +56,7 @@ export default function Experience() {
                               size={18}
                               className="text-gray-200/80 mr-2"
                             />
-                            <p className="text-gray-200/80 md:text-xs text-[8px] font-semibold">
+                            <p className="text-gray-200/80 md:text-xs text-[10px] font-semibold">
                               August - December 2023
                             </p>
                           </div>
