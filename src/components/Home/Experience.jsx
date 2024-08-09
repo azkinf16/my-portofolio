@@ -140,7 +140,7 @@ export default function Experience() {
                             University of Singaperbangsa Karawang
                           </h2>
                           <p className="text-white/50 md:text-xs text-[10px] my-2">
-                            Information System
+                            Majoring Information System
                           </p>
                           <div className="flex items-center">
                             <BsCalendarCheckFill
@@ -148,7 +148,7 @@ export default function Experience() {
                               className="text-gray-200/80 mr-2"
                             />
                             <p className="text-gray-200/80 md:text-xs text-[10px] font-semibold">
-                              2020 - Present
+                              2020 - 2024
                             </p>
                           </div>
                         </div>

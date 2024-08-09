@@ -89,12 +89,14 @@ export default function About() {
               </div>
             </div>
             <div className="mt-10">
-              <p className="text-white/75 font-thin text-lg md:text-justify text-center">
-                I`m an active College Student majoring in Information Systems at
-                Singaperbangsa Karawang University with highly dedicated in
-                leadership, initiative, responsibility and social skills and was
-                interested to Web Development, especially for being a Front End
-                Developer.
+              <p className="text-white/75 font-thin text-base md:text-justify text-center">
+                I am a fresh graduate from Singaperbangsa Karawang University
+                with strong leadership, initiative, responsibility, and social
+                skills. With a keen interest in Front End Development, I am
+                passionate about creating user-friendly and visually appealing
+                web applications. My solid foundation in Information Systems
+                drives my eagerness to apply my skills and knowledge to
+                real-world projects and grow in the web development field.
               </p>
             </div>
           </div>
