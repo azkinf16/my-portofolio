@@ -107,7 +107,7 @@ export default function Hero() {
           </h1>
           <div className="md:w-[80%] px-12 md:px-0 mt-6">
             <p className="text-white/75 text-sm text-center md:text-left">
-              A College Student who was interested to Web Development,
+              A Person who was interested to Web Development,
               especially being a Front End Developer.
             </p>
           </div>
