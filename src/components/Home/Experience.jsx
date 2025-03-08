@@ -46,10 +46,32 @@ export default function Experience() {
                       children: (
                         <div className="ml-3">
                           <h2 className="text-white font-semibold md:text-sm text-[10px]">
+                            IT Programmer Intern
+                          </h2>
+                          <p className="text-white/50 md:text-xs text-[10px] mt-2 mb-2">
+                            at Astana Group - Full Stack Web Developer
+                          </p>
+                          <div className="flex items-center">
+                            <BsCalendarCheckFill
+                              size={18}
+                              className="text-gray-200/80 mr-2"
+                            />
+                            <p className="text-gray-200/80 md:text-xs text-[10px] font-semibold">
+                              August 2024 - March 2025
+                            </p>
+                          </div>
+                        </div>
+                      ),
+                    },
+                    {
+                      color: "gray",
+                      children: (
+                        <div className="ml-3">
+                          <h2 className="text-white font-semibold md:text-sm text-[10px]">
                             Kampus Merdeka - Magang Bersertifikat
                           </h2>
                           <p className="text-white/50 md:text-xs text-[10px] mt-2 mb-2">
-                          at MKnows Consulting - Front End Web Developer
+                            at MKnows Consulting - Front End Web Developer
                           </p>
                           <div className="flex items-center">
                             <BsCalendarCheckFill
@@ -80,28 +102,6 @@ export default function Experience() {
                             />
                             <p className="text-gray-200/80 md:text-xs text-[10px] font-semibold">
                               August - December 2022
-                            </p>
-                          </div>
-                        </div>
-                      ),
-                    },
-                    {
-                      color: "gray",
-                      children: (
-                        <div className="ml-3 md:mb-2">
-                          <h2 className="text-white font-semibold md:text-sm text-[10px]">
-                            Bootcamp OrangSiber X Progate
-                          </h2>
-                          <p className="text-white/50 md:text-xs text-[10px] mt-2 mb-2">
-                            Web Developer Path
-                          </p>
-                          <div className="flex items-center">
-                            <BsCalendarCheckFill
-                              size={18}
-                              className="text-gray-200/80 mr-2"
-                            />
-                            <p className="text-gray-200/80 md:text-xs text-[10px] font-semibold">
-                              July - August 2021
                             </p>
                           </div>
                         </div>

@@ -77,7 +77,7 @@ export default function Hero() {
             <BsFacebook className="text-white mb-9 text-4xl md:text-lg cursor-pointer hover:scale-150 duration-500" />
           </a>
           <a
-            href="https://www.instagram.com/azkinf__/"
+            href="https://www.instagram.com/s_keyyyyy/"
             target="_blank"
             rel="noreferrer"
           >
@@ -107,8 +107,7 @@ export default function Hero() {
           </h1>
           <div className="md:w-[80%] px-12 md:px-0 mt-6">
             <p className="text-white/75 text-sm text-center md:text-left">
-              A Person who was interested to Web Development,
-              especially being a Front End Developer.
+              A Person who was interested to Web Development.
             </p>
           </div>
           <div className="mt-12 flex md:justify-start justify-center">
@@ -116,8 +115,7 @@ export default function Hero() {
               onClick={() => setShowModal(true)}
               className="bg-gradient-to-b from-[#1b1b31] to-[#22222d] text-white py-3 px-4 rounded-xl group hover:scale-110 duration-300 flex items-center font-bold"
             >
-              Say Hello{" "}
-              <span className="ml-2 animate-wave">👋</span>
+              Say Hello <span className="ml-2 animate-wave">👋</span>
             </button>
           </div>
           <Modal isVisible={showModal} onClose={() => setShowModal(false)}>

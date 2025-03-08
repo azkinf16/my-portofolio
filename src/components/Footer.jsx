@@ -9,7 +9,9 @@ export default function Footer() {
             <h1 className="text-white text-center md:text-left font-extrabold md:text-7xl text-6xl mb-2">
               Thank&#39;s
             </h1>
-            <h1 className="text-white font-[100] text-center md:text-left md:text-5xl text-4xl">for coming in !</h1>
+            <h1 className="text-white font-[100] text-center md:text-left md:text-5xl text-4xl">
+              for coming in !
+            </h1>
             <p className="mt-5 text-gray-600 text-xs text-center md:text-left md:w-[62%] mx-[45px] md:mx-0">
               This is a simple project that I made from my previous learning
               period, I hope you can provide criticism and suggestions or convey
@@ -33,7 +35,7 @@ export default function Footer() {
                 <BsFacebook className="text-white text-3xl cursor-pointer hover:scale-150 duration-500" />
               </a>
               <a
-                href="https://www.instagram.com/azkinf__/"
+                href="https://www.instagram.com/s_keyyyyy/"
                 target="_blank"
                 rel="noreferrer"
               >

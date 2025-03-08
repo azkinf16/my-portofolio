@@ -57,46 +57,49 @@ export default function About() {
                       Indonesia
                     </h1>
                     <p className="md:text-[10px] text-sm font-thin text-gray-300 text-center">
-                      Bogor - Karawang
+                      Bogor
                     </p>
                   </div>
                   <h1 className="hidden md:block text-sm font-semibold text-gray-300 text-center mb-1">
                     Indonesia
                   </h1>
                   <p className="hidden md:block text-[10px] font-thin text-gray-300 text-center">
-                    Bogor - Karawang
+                    Bogor
                   </p>
                 </div>
-                <div className="flex items-center justify-between px-8 md:px-0 md:grid bg-gradient-to-b from-[#1b1b31] to-[#22222d] text-white p-5 md:w-[10rem] w-full rounded-3xl hover:scale-110 duration-200 cursor-default">
+                <div className="flex items-center justify-between md:justify-normal  px-8 md:px-0 md:grid bg-gradient-to-b from-[#1b1b31] to-[#22222d] text-white p-5 md:w-[10rem] w-full rounded-3xl hover:scale-110 duration-200 cursor-default">
                   <div className="flex justify-center">
                     <IoSchoolSharp className="text-gray-400 mb-3 md:text-[32px] text-[50px]" />
                   </div>
-                  <div className="md:hidden ml-6">
-                    <h1 className="md:text-sm text-[10px] font-semibold text-gray-300 text-center mb-1">
-                      University Of Singaperbangsa
+                  <div className="md:hidden">
+                    <h1 className="md:text-sm text-[10px] font-semibold text-gray-300 text-center">
+                      Bachelor
                     </h1>
                     <p className="md:text-[10px] text-[12px] font-thin text-gray-300 text-center">
-                      Karawang
+                      Information Systems
                     </p>
                   </div>
-                  <h1 className="hidden md:block text-sm font-semibold text-gray-300 text-center mb-1">
-                    University Of Singaperbangsa
+                  <h1 className="hidden md:block text-sm font-semibold text-gray-300 text-center">
+                    Bachelor
                   </h1>
                   <p className="hidden md:block text-[10px] font-thin text-gray-300 text-center">
-                    Karawang
+                    Information Systems
                   </p>
                 </div>
               </div>
             </div>
             <div className="mt-10">
               <p className="text-white/75 font-thin text-base md:text-justify text-center">
-                I am a fresh graduate from Singaperbangsa Karawang University
-                with strong leadership, initiative, responsibility, and social
-                skills. With a keen interest in Front End Development, I am
-                passionate about creating user-friendly and visually appealing
-                web applications. My solid foundation in Information Systems
-                drives my eagerness to apply my skills and knowledge to
-                real-world projects and grow in the web development field.
+                A proactive and driven individual with a strong sense of
+                leadership, initiative, responsibility, and exceptional
+                interpersonal skills. Passionate about Web Development, with a
+                focus on designing and building user-friendly, visually
+                appealing, and highly functional web applications. Equipped with
+                a solid foundation in Information Systems and eager to apply
+                technical expertise and problem-solving skills to real-world
+                projects. Committed to continuous learning and growth, aiming to
+                contribute to innovative web development initiatives and deliver
+                impactful solutions.
               </p>
             </div>
           </div>
