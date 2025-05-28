@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Modal from "./Modal";
 
@@ -22,17 +23,15 @@ export default function Navbar() {
     <div>
       <nav
         className={`${
-          color
-            ? "md:bg-[#090912] md:shadow-2xl md:py-3"
-            : "md:bg-transparent"
+          color ? "md:bg-[#090912] md:shadow-2xl md:py-3" : "md:bg-transparent"
         } py-7 bg-[#090912] shadow-2xl md:shadow-none fixed md:flex items-center justify-between md:px-40 px-10 z-10 w-full duration-300`}
       >
-        <a
-          href="#hero"
+        <Link
+          to="/"
           className="w-max md:text-2xl text-xl text-gray-300 cursor-default tracking-[5px] hover:tracking-[6px] duration-300"
         >
           <span className="font-black">Azki</span>Fajri
-        </a>
+        </Link>
 
         <div
           onClick={() => setIsOpen(!isOpen)}
@@ -50,24 +49,24 @@ export default function Navbar() {
             isOpen ? "opacity-100" : "left-[-590px]"
           } opacity-0 md:opacity-100 `}
         >
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="text-white text-lg md:mt-0 tracking-wider hover:scale-110 duration-200 w-max"
           >
             About
-          </a>
-          <a
-            href="#exp"
+          </Link>
+          <Link
+            to="/experience"
             className="text-white text-lg md:mt-0 mt-4 tracking-wider hover:scale-110 duration-200 md:ml-8 w-max"
           >
             Experiences
-          </a>
-          <a
-            href="#projects"
+          </Link>
+          <Link
+            to="/project"
             className="text-white text-lg md:mt-0 mt-4 tracking-wider hover:scale-110 duration-200 md:ml-8 w-max"
           >
             Projects
-          </a>
+          </Link>
           <div className="md:ml-8 ml-[-2px] mt-6 md:mt-0">
             <button
               onClick={() => setShowModal2(true)}

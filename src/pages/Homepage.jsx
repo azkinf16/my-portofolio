@@ -1,8 +1,8 @@
-import Footer from "../components/Footer";
-import About from "../components/Home/About";
-import Experience from "../components/Home/Experience";
+// import Footer from "../components/Footer";
+// import About from "../components/Home/About";
+// import Experience from "../components/Home/Experience";
+// import Project from "../components/Home/Project";
 import Hero from "../components/Home/Hero";
-import Project from "../components/Home/Project";
 import Navbar from "../components/Navbar";
 
 function Homepage() {
@@ -10,10 +10,10 @@ function Homepage() {
     <div className="homepage">
       <Navbar />
       <Hero />
-      <About />
+      {/* <About />
       <Experience />
       <Project />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

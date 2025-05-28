@@ -1,3 +1,22 @@
 .ant-timeline-item-tail {
-    background: gray !important;
+  background: gray !important;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.scrollbar-custom {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #444 transparent;
 }

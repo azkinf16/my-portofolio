@@ -1,10 +1,10 @@
-import { BsFacebook, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
+// import { BsFacebook, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
     <>
       <div className="md:mt-16 mt-36 mb-7 md:px-40">
-        <div className="md:flex md:justify-between">
+        {/* <div className="md:flex md:justify-between">
           <div className="left-footer md:w-1/2">
             <h1 className="text-white text-center md:text-left font-extrabold md:text-7xl text-6xl mb-2">
               Thank&#39;s
@@ -57,7 +57,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="md:mt-10 w-full">
           <div className="md:flex md:justify-center md:items-center grid place-content-center">
             <h6 className="text-white mr-3">Fully Created by</h6>
