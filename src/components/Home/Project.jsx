@@ -9,7 +9,61 @@ import { SlGlobe } from "react-icons/sl";
 import { BsGithub } from "react-icons/bs";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 
+import { FaNodeJs, FaReact, FaVuejs, FaLaravel } from "react-icons/fa";
+import {
+  SiRedux,
+  SiReactquery,
+  SiAntdesign,
+  SiTailwindcss,
+  SiShadcnui,
+  SiAxios,
+  SiFirebase,
+  SiJest,
+  SiZod,
+  SiBootstrap,
+  SiNx,
+  SiTypescript,
+  SiNextdotjs,
+  SiNuxtdotjs,
+  SiExpress,
+  SiSequelize,
+  SiPostgresql,
+  SiMysql,
+  SiRecoil,
+  SiPhp,
+} from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
+
 import Modal from "../Modal";
+
+// Mapping nama tech stack ke icon
+const techIcons = {
+  "Node.js": <FaNodeJs className="text-green-600" />,
+  "React.js": <FaReact className="text-sky-400" />,
+  Redux: <SiRedux className="text-purple-500" />,
+  "React Query": <SiReactquery className="text-pink-500" />,
+  Antdesign: <SiAntdesign className="text-blue-400" />,
+  Tailwindcss: <SiTailwindcss className="text-cyan-400" />,
+  Shadcnui: <SiShadcnui className="text-gray-200" />,
+  Axios: <SiAxios className="text-sky-500" />,
+  Firebase: <SiFirebase className="text-yellow-400" />,
+  Jest: <SiJest className="text-red-500" />,
+  Zod: <SiZod className="text-lime-400" />,
+  Bootstrap: <SiBootstrap className="text-indigo-400" />,
+  Nx: <SiNx className="text-yellow-400" />,
+  Typescript: <SiTypescript className="text-blue-500" />,
+  "Next.js": <SiNextdotjs className="text-black dark:text-white" />,
+  "Nuxt.js": <SiNuxtdotjs className="text-green-600" />,
+  "Express.js": <SiExpress className="text-gray-400" />,
+  "Sequelize.js": <SiSequelize className="text-blue-400" />,
+  PostgreSQL: <SiPostgresql className="text-blue-700" />,
+  MySQL: <SiMysql className="text-yellow-500" />,
+  Laravel: <FaLaravel className="text-red-500" />,
+  "Vue.js": <FaVuejs className="text-green-400" />,
+  Recoil: <SiRecoil className="text-blue-400" />,
+  "Framer-Motion": <TbBrandFramerMotion className="text-pink-400" />,
+  PHP: <SiPhp className="text-indigo-500" />,
+};
 
 export default function Project() {
   const [showModal, setShowModal] = useState(false);
@@ -91,43 +145,66 @@ export default function Project() {
             className="rounded-lg hidden md:block"
           />
           <div className="relative md:ml-10 md:py-2 h-[300px]">
-            <div className="mb-6">
+            <div className="mb-4">
               <h1 className="text-white font-bold text-2xl mb-3">
                 {modalData.title}
               </h1>
-              <p className="text-white/60 font-thin text-[15px] w-[250px]">
+              <p className="text-white/60 font-thin text-xs w-[250px]">
                 {modalData.desc}
               </p>
             </div>
-            <p className="text-white/80 font-semibold text-[15px] mb-3">
-              Created at {modalData.created}
-            </p>
-            <div className="flex items-center gap-12 bottom-1 absolute">
-              <div className="left">
-                <p className="text-white/70 font-bold text-[10px] flex items-center">
-                  Check Demo and Repository
-                  <MdOutlineDoubleArrow className="ml-2" />
+            {/* Tech Stack Logo */}
+            {modalData.techStack && (
+              <div className="mb-3">
+                <p className="text-white/80 font-semibold text-xs mb-2">
+                  Tech Stack
                 </p>
+                <div className="flex flex-wrap gap-2 w-[250px]">
+                  {modalData.techStack.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-white/10 text-white/80 text-xl px-2 py-1 rounded flex items-center"
+                      title={tech}
+                    >
+                      {techIcons[tech] || (
+                        <span className="text-xs text-white/60">{tech}</span>
+                      )}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="right flex">
-                <a href={modalData.demo} target="_blank" rel="noreferrer">
-                  <Tooltip title={tooltipDemo} color="#1A1A2B">
-                    <SlGlobe
-                      size={25}
-                      className="text-white/30 mr-4 hover:text-white hover:scale-110 duration-300 cursor-pointer"
-                    />
-                  </Tooltip>
-                </a>
-                <a href={modalData.repo} target="_blank" rel="noreferrer">
-                  <Tooltip title={tooltipRepo} color="#1A1A2B">
-                    <BsGithub
-                      size={25}
-                      className="text-white/30 -mr-6 hover:text-white hover:scale-110 duration-300 cursor-pointer"
-                    />
-                  </Tooltip>
-                </a>
+            )}
+            {(modalData.demo || modalData.repo) && (
+              <div className="w-full flex items-center gap-12 bottom-1 absolute justify-between">
+                <div className="left">
+                  <p className="text-white/70 font-bold text-[10px] flex items-center">
+                    Check it out <MdOutlineDoubleArrow className="ml-2" />
+                  </p>
+                </div>
+                <div className="right absoulte flex gap-3 right-3">
+                  {modalData.demo && (
+                    <a href={modalData.demo} target="_blank" rel="noreferrer">
+                      <Tooltip title={tooltipDemo} color="#1A1A2B">
+                        <SlGlobe
+                          size={25}
+                          className="text-white/30 hover:text-white hover:scale-110 duration-300 cursor-pointer"
+                        />
+                      </Tooltip>
+                    </a>
+                  )}
+                  {modalData.repo && (
+                    <a href={modalData.repo} target="_blank" rel="noreferrer">
+                      <Tooltip title={tooltipRepo} color="#1A1A2B">
+                        <BsGithub
+                          size={25}
+                          className="text-white/30 hover:text-white hover:scale-110 duration-300 cursor-pointer"
+                        />
+                      </Tooltip>
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </motion.div>
       </Modal>

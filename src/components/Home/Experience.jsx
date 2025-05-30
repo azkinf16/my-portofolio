@@ -1,11 +1,5 @@
-import { Timeline } from "antd";
 import { motion } from "framer-motion";
-
-import { HiLightBulb } from "react-icons/hi";
-import { IoIosSchool } from "react-icons/io";
-import { IoPeopleCircleSharp } from "react-icons/io5";
 import { BsCalendarCheckFill } from "react-icons/bs";
-import { FcIdea, FcGraduationCap, FcConferenceCall } from "react-icons/fc";
 
 import "./experience.css";
 
@@ -17,6 +11,78 @@ const cardVariants = {
     transition: { delay: i * 0.2 },
   }),
 };
+
+// DATA PENGALAMAN KERJA
+const experiences = [
+  {
+    company: "Astana Group",
+    logo: (
+      <img
+        src="/images/astana.png"
+        alt="Astana Group"
+        className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] object-contain rounded-xl bg-white p-2"
+      />
+    ),
+    role: "IT Programmer",
+    period: "Aug 2024 - Now · 10 months",
+    location: "Jakarta Selatan, Jakarta Raya, Indonesia",
+    status: "Internship", // <-- Tambahkan status
+    details: [
+      "Maintaining project with different stack which is Single Sign On and Driving Range App (Javascript Stack) and AR AP Monitoring App (Laravel Stack).",
+      "Refined user interfaces to ensure a seamless and intuitive user experience.",
+      "Enhanced application performance by optimizing both frontend interfaces and backend services.",
+      "Improved backend services for better reliability, scalability, and efficiency.",
+      "Identified and resolved issues in both frontend and backend components to ensure smooth application operation.",
+      "Refactored existing code to improve maintainability and readability.",
+      "Worked closely with cross-functional teams to implement changes and ensure alignment with project goals.",
+    ],
+  },
+  {
+    company: "M-Knows Consulting",
+    logo: (
+      <img
+        src="/images/mknows.png"
+        alt="M-Knows Consulting"
+        className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] object-contain rounded-xl bg-white p-2"
+      />
+    ),
+    role: "Frontend Web Developer",
+    period: "Aug 2023 - Dec 2023 · 5 months",
+    location: "Tangerang Selatan, Banten, Indonesia",
+    status: "Internship", // <-- Tambahkan status
+    details: [
+      "Developed the kampusgratis.id Learning Management System (LMS) website and developed kampusgratis admin website using NextJS and TypeScript.",
+      "Integrated Nx monorepo for enhanced efficiency in development.",
+      "Employed Recoil and React Query for state management in the application.",
+      "Utilized Tailwind, Headless UI, and shadcn UI as CSS frameworks to enhance the front-end user experience.",
+      "Implemented appropriate sitemap and meta tags to enhance SEO performance.",
+    ],
+  },
+  {
+    company: "Binar Academy",
+    logo: (
+      <img
+        src="/images/binar.png"
+        alt="Binar Academy"
+        className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] object-contain rounded-xl bg-white p-2"
+      />
+    ),
+    role: "Front End Javascript",
+    period: "Aug 2022 - Dec 2022 · 5 months",
+    location: "Study Independent Program on MSIB Kampus Merdeka Batch 3",
+    status: "Study Independent", // <-- Tambahkan status
+    details: [
+      "Learn about Introduction to Web Developer such as HTML, CSS, Javascript, Layouting, Responsive Design, CSS Framework and also learn how to use GIT in work cycle programming.",
+      "Learn about Data Structure, Operator & Expression, Basic Algorithm, and DOM in Javascript.",
+      "Learn to understand the concept of Object Oriented Programming in Node.js script.",
+      "Learn about React.js from basic, styling, function & class components, asynchronous, and how to consume APIs.",
+      "Learn about authentication and authorization.",
+      "Learn about Redux State Management and implementation into APIs.",
+      "Learn how to deploy projects and also an introduction to web sockets and containerization.",
+      "Complete the final project in making a website based on the React.js Framework.",
+    ],
+  },
+];
 
 export default function Experience() {
   return (
@@ -44,8 +110,7 @@ export default function Experience() {
 
       {/* Card Section */}
       <div className="grid md:grid-cols-3 place-items-center gap-10 md:gap-20 md:px-10">
-        {/* 1: Work & Learning */}
-        {[FcIdea, FcGraduationCap, FcConferenceCall].map((Icon, index) => (
+        {experiences.map((exp, index) => (
           <motion.div
             key={index}
             className="group [perspective:1000px]"
@@ -57,35 +122,47 @@ export default function Experience() {
           >
             <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               {/* FRONT */}
-              <div className="absolute md:h-[450px] h-[400px] md:w-[350px] w-[280px] bg-gradient-to-b from-[#121221] via-[#22222e] to-[#1e1e28] pt-6 px-7 rounded-xl">
-                <div className="grid grid-cols-1 place-items-center md:mt-16 mt-10">
-                  <Icon className="text-[160px] md:text-[180px]" />
-                  <h1 className="text-white font-bold text-2xl md:text-3xl mt-10">
-                    {["Work & Learning", "Education", "Organization"][index]}
+              <div className="absolute md:h-[450px] h-[400px] md:w-[350px] w-[280px] bg-gradient-to-b from-[#121221] via-[#22222e] to-[#1e1e28] pt-16 px-7 rounded-xl flex flex-col items-center justify-start">
+                <div className="flex flex-col items-center justify-center">
+                  {exp.logo}
+                  <h1 className="text-white font-bold text-2xl md:text-3xl mt-6 text-center">
+                    {exp.company}
                   </h1>
+                  <h2 className="text-white/80 font-semibold text-lg md:text-xl mt-2 text-center">
+                    {exp.role}
+                  </h2>
+                  <div className="flex items-center gap-2 mt-2">
+                    <BsCalendarCheckFill className="text-gray-400" />
+                    <span className="text-xs text-gray-200">{exp.period}</span>
+                  </div>
+                  <div className="text-xs text-gray-400 mt-1 text-center">
+                    {exp.location}
+                  </div>
+                  {/* Badge hanya di front */}
+                  <span
+                    className={`absolute bottom-6 px-3 py-1 rounded-full text-xs font-bold shadow-md ${
+                      exp.status === "Internship"
+                        ? "bg-blue-600 text-white"
+                        : "bg-green-600 text-white"
+                    }`}
+                  >
+                    {exp.status}
+                  </span>
                 </div>
               </div>
-
               {/* BACK */}
-              <div className="md:h-[450px] h-[400px] md:w-[350px] w-[280px] bg-gradient-to-b from-[#121221] via-[#22222e] to-[#1e1e28] pt-6 px-7 rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto scrollbar-custom">
-                <div className="mb-10 flex items-center justify-center">
-                  {[HiLightBulb, IoIosSchool, IoPeopleCircleSharp][index]({
-                    className: "text-gray-400 mr-3 text-[20px] md:text-[32px]",
-                  })}
-                  <h2 className="text-white font-normal md:text-sm text-xs">
-                    {
-                      [
-                        "Work & Learning Experiences",
-                        "Education",
-                        "Organization",
-                      ][index]
-                    }
-                  </h2>
-                </div>
-                <Timeline
-                  style={{ fontFamily: "Poppins" }}
-                  items={getTimelineItems(index)}
-                />
+              <div className="md:h-[450px] h-[400px] md:w-[350px] w-[280px] bg-gradient-to-b from-[#121221] via-[#22222e] to-[#1e1e28] pt-6 px-7 rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto scrollbar-custom flex flex-col">
+                <h2 className="text-white font-bold text-lg mb-2 text-center">
+                  {exp.role}
+                </h2>
+                <h3 className="text-white/80 font-semibold text-base mb-2 text-center">
+                  {exp.company}
+                </h3>
+                <ul className="list-disc ml-4 mt-2 mb-5 text-xs text-gray-300 space-y-2">
+                  {exp.details.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </motion.div>
@@ -93,102 +170,4 @@ export default function Experience() {
       </div>
     </motion.div>
   );
-}
-
-function getTimelineItems(index) {
-  const calendar = (text) => (
-    <div className="flex items-center">
-      <BsCalendarCheckFill size={18} className="text-gray-200/80 mr-2" />
-      <p className="text-gray-200/80 md:text-xs text-[10px] font-semibold">
-        {text}
-      </p>
-    </div>
-  );
-
-  const timelineData = [
-    // Work & Learning
-    [
-      {
-        title: "IT Programmer Intern",
-        org: "at Astana Group - Full Stack Web Developer",
-        date: "August 2024 - March 2025",
-      },
-      {
-        title: "Kampus Merdeka - Magang Bersertifikat",
-        org: "at MKnows Consulting - Front End Web Developer",
-        date: "August - December 2023",
-      },
-      {
-        title: "Kampus Merdeka - Studi Independen Bersertifikat",
-        org: "at Binar Academy - Front End JavaScript",
-        date: "August - December 2022",
-      },
-    ],
-
-    // Education
-    [
-      {
-        title: "University of Singaperbangsa Karawang",
-        org: "Majoring Information System",
-        date: "2020 - 2024",
-      },
-      {
-        title: "SMAN 1 Citeureup",
-        org: "Science Class",
-        date: "2017 - 2020",
-      },
-      {
-        title: "SMPN 3 Citeureup",
-        org: "",
-        date: "2014 - 2017",
-      },
-      {
-        title: "SDN 1 Leuwinutug",
-        org: "",
-        date: "2008 - 2014",
-      },
-    ],
-
-    // Organization
-    [
-      {
-        title: "HIMSIKA Universitas Singaperbangsa Karawang",
-        org: [
-          "• Head of Dept. Keahlian at Edukasi Division",
-          "• Chief Executive in Event `Education Fair 2022`",
-        ],
-        date: "February 2022 - November 2022",
-      },
-      {
-        title: "Sports Extracurricular of SMAN 1 Citeureup",
-        org: "Branch Badminton Coordinator",
-        date: "June 2018 - June 2019",
-      },
-    ],
-  ];
-
-  return timelineData[index].map((item) => ({
-    color: "gray",
-    children: (
-      <div className="ml-3 mb-2">
-        <h2 className="text-white font-semibold md:text-sm text-[10px]">
-          {item.title}
-        </h2>
-        {Array.isArray(item.org) ? (
-          <ul className="text-gray-200/50 md:text-[10px] text-[7px] my-2">
-            {item.org.map((line, i) => (
-              <li key={i}>{line}</li>
-            ))}
-          </ul>
-        ) : (
-          item.org && (
-            <p className="text-white/50 md:text-xs text-[10px] my-2">
-              {item.org}
-            </p>
-          )
-        )}
-        {calendar(item.date)}
-      </div>
-    ),
-  }));
 }

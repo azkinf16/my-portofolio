@@ -28,7 +28,7 @@ export default function Navbar() {
       >
         <Link
           to="/"
-          className="w-max md:text-2xl text-xl text-gray-300 cursor-default tracking-[5px] hover:tracking-[6px] duration-300"
+          className="w-max md:text-2xl text-xl text-gray-300 cursor-pointer tracking-[5px] hover:tracking-[6px] duration-300"
         >
           <span className="font-black">Azki</span>Fajri
         </Link>
