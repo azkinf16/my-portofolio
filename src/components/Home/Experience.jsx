@@ -24,7 +24,7 @@ const experiences = [
       />
     ),
     role: "IT Programmer",
-    period: "Aug 2024 - Now · 10 months",
+    period: "Aug 2024 - June 2025 · 10 months",
     location: "Jakarta Selatan, Jakarta Raya, Indonesia",
     status: "Internship", // <-- Tambahkan status
     details: [
